@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 #Stage 2
-FROM nginx:latest
+FROM nginx:1.27.0-alpine
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 COPY --from=builder /dist .
