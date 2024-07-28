@@ -11,15 +11,16 @@
 
 
 # Kindle to Notion (FE)
-This repository contains the frontend application for the Kindle to Notion project. This application allows users to upload Kindle books and automatically create Notion pages with the book's content.
+This repository contains the frontend application for the Kindle to Notion project (https://github.com/GrzegorzOpara/kindle-to-notion). This is a front-end application that allows users to upload Kindle books and automatically create Notion pages with the book's content.
 
 ## Getting Started
 
 ### Prerequisites:
+- **Backend service (https://github.com/GrzegorzOpara/kindle-to-notion) up and running on your local machine (http://172.0.0.1:8080)**.
 - Node.js and npm (or yarn) installed on your system.
 - A Notion account with a database created for storing book information.
 - A Notion API key.
-- Backend service (https://github.com/GrzegorzOpara/kindle-to-notion) up and running on your local machine (http://172.0.0.1:8080).
+
 
 ### Installation:
 - Clone this repository.
