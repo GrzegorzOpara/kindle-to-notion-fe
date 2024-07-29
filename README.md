@@ -15,12 +15,16 @@ This repository contains the frontend application for the Kindle to Notion proje
 
 ## Getting Started
 
+### Securty note
+This front end application interacts with backend application and at the end with Notion. While the application itself doesn't store your Notion database id or API key, it does transmit them in plain text to the backend endpoint. This happens locally on your computer (since both frontend and backend run locally in docker containers), no data is being send outside until the very last call from the backend to Notion API.
+
+Still, this means that anyone with access to your browser history could potentially see these sensitive credentials.
+
 ### Prerequisites:
 - **Backend service (https://github.com/GrzegorzOpara/kindle-to-notion) up and running on your local machine (http://172.0.0.1:8080)**.
 - Node.js and npm (or yarn) installed on your system.
 - A Notion account with a database created for storing book information.
 - A Notion API key.
-
 
 ### Installation:
 - Clone this repository.
