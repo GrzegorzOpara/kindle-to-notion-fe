@@ -32,7 +32,7 @@ Still, this means that anyone with access to your browser history could potentia
 - Run ``npm install`` to install dependencies.
 
 ### Running the application:
-- Create .env file in the project directory with the following content:
+- **[Optionally]** Create .env file in the project directory with the following content, you can set different backend url (if .env file doesn't exists it defaults to ``http://localhost:8080``):
 ```text
 VITE_BACKEND_URL=localhost:8080
 ```
