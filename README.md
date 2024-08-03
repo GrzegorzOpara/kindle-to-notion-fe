@@ -22,7 +22,7 @@ Still, this means that anyone with access to your browser history could potentia
 
 ### Prerequisites:
 - **Backend service (https://github.com/GrzegorzOpara/kindle-to-notion) up and running on your local machine (http://172.0.0.1:8080)**.
-- Node.js and npm (or yarn) installed on your system.
+- Node.js and npm installed on your system.
 - A Notion account with a database created for storing book information.
 - A Notion API key.
 
@@ -31,9 +31,24 @@ Still, this means that anyone with access to your browser history could potentia
 - Navigate to the project directory in your terminal.
 - Run ``npm install`` to install dependencies.
 
-### Running the Project:
+### Running the application:
+- Create .env file in the project directory with the following content:
+```text
+VITE_BACKEND_URL=localhost:8080
+```
 - Run ``npm run dev`` to start the development server.
 - The application will be accessible at http://localhost:5173/.
+
+### Docker
+If you prefer to use docker
+1. Build docker image
+```bash
+docker build -t kindle-to-notion-fe .
+```
+2. Run docker imiage
+```bash
+docker run -p 5173:80 kindle-to-notion:latest
+```
 
 ## Usage
 - Navigate to http://localhost:5173/
