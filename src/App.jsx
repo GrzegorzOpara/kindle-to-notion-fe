@@ -49,9 +49,11 @@ function App() {
     formData.append('notion_db_id', databaseId);
     formData.append('notion_api_key', api);
     formData.append('file', file);
-    
+
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080';
+  
     try {
-      const response = await axios.post(import.meta.env.VITE_BACKEND_URL + '/process_file', formData, {
+      const response = await axios.post(backendUrl + '/process_file', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
