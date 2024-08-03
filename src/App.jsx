@@ -49,9 +49,9 @@ function App() {
     formData.append('notion_db_id', databaseId);
     formData.append('notion_api_key', api);
     formData.append('file', file);
-
+    
     try {
-      const response = await axios.post('http://localhost:8080/process_file', formData, {
+      const response = await axios.post(import.meta.env.VITE_BACKEND_URL + '/process_file', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
